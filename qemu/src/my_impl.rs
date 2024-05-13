@@ -1,9 +1,6 @@
 use crate::DMA_PADDR;
 use alloc::boxed::Box;
-// use core::ops::Range;
-// use core::ptr::NonNull;
 use core::sync::atomic::Ordering;
-// use safe_virtio_drivers::device::input;
 use safe_virtio_drivers::error::VirtIoResult;
 use safe_virtio_drivers::hal::{DevicePage, QueuePage, VirtIoDeviceIo};
 use safe_virtio_drivers::queue::{AvailRing, Descriptor, QueueLayout, QueueMutRef, UsedRing};

@@ -4,7 +4,6 @@ use core::{
     sync::atomic::{AtomicUsize, Ordering},
 };
 use log::trace;
-// use spin::Lazy;
 use virtio_drivers::{BufferDirection, Hal, PhysAddr, PAGE_SIZE};
 
 pub struct HalImpl;

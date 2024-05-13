@@ -9,16 +9,18 @@ edition = "2018"
 [features]
 tcp = ["smoltcp"]
 # default = []
-default = ["tcp"]
+default = []
 
 [dependencies]
 log = "0.4"
-riscv = "0.10"
-opensbi-rt = { git = "https://github.com/rcore-os/opensbi-rt.git", rev = "abdfeb72" }
+riscv = "0"
 fdt = "0.1.4"
 virtio-drivers = { git = "https://github.com/rcore-os/virtio-drivers" }
 spin = "0.9"
 safe-virtio-drivers = { path = "../virtio-drivers", package = "virtio-drivers"}
+talc = { version = "4" }
+plic = { git = "https://github.com/os-module/plic" }
+kernel-sync = { git = "https://github.com/os-module/kernel-sync.git" }
 
 [dependencies.smoltcp]
 version = "0.9.1"
